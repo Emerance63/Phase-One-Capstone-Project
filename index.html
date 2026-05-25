@@ -7,14 +7,129 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body  class="footer-card text-white h-[50%]">
+  <body  class="footer-card text-white h-[50%] relative">
     <header>
       <nav class="Card shadow fixed top-0 left-0 right-0">
         <div
           class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6"
         >
-   <script src="https://cdn.tailwindcss.com"></script>
-      <link rel="stylesheet" href="/style.css" />
-</head>
- </body>
+         <div class="flex items-center gap-3">
+            <div class="w-10 md:w-20">
+              <img src="/image/Igire_Rwanda_Logo (1).png" alt="Logo" />
+            </div>
+            <h1 class="text-xl font-bold">Book-Explorer</h1>
+          </div>
+
+          <div class="hidden md:flex items-center gap-6 font-bold text-lg">
+            <a
+              href="index.html"
+              class="inline-block hover:bg-orange-600 rounded py-2 px-4"
+              >Home</a
+            >
+            <a
+              href="favorites.html"
+              class="inline-block hover:bg-orange-600 rounded py-2 px-4"
+              >Favorites</a
+            >
+            <a
+              href="about.html"
+              class="inline-block hover:bg-orange-600 rounded py-2 px-4"
+              >About</a
+            >
+          </div>
+
+          <div
+            class="hamburger-menu flex md:hidden flex-col justify-between cursor-pointer h-6 w-8"
+          >
+            <div class="block h-1 bg-white rounded"></div>
+            <div class="block h-1 bg-white rounded"></div>
+            <div class="block h-1 bg-white rounded"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <section  id="Prime" class="flex justify-center items-center py-40 ">
+      <div>
+        <div class="hero-card ml-4 mr-4 md:ml-0 md:mr-0">
+          <p
+            class="text-xl font-bold text-orange-500 tracking-tither text-center py-4 md:text-center tracking-widest"
+          >
+            POWER BY OPEN LIBRARY
+          </p>
+          <h2 class="text-4xl font-bold mb-4 md:text-8xl">
+            Discover your next </h2>
+            <p class="text-orange-500 text-3xl font-bold text-center md:text-6xl "
+              >favorite Book</p>
+            
+          
+          <p class="text-lg text-gray-300 text-center">
+             Search millions of books, save your favorites,
+      and build your reading list.
+          </p>
+        </div>
+
+        <div class="mt-8 flex flex-row gap-1 ml-4  md:gap-2 ml-0 items-center justify-center">
+          <input
+            type="text"
+            placeholder="Search for books..."
+            class="bg-orange-200 px-4 py-2 rounded font-semibold placeholder:text-white"
+          />
+
+          <button
+            class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded"
+          >
+            Search
+          </button>
+        </div>
+         <div class="flex flex-wrap justify-center gap-4 mt-8 ">
+
+      <button class="bg-white/10 py-2 px-4 rounded">Philosophy</button>
+      <button class="bg-white/10 py-2 px-4 rounded">Science Fiction</button>
+      <button class="bg-white/10 py-2 px-4 rounded">Classic Literature</button>
+      <button class="bg-white/10 py-2 px-4 rounded">History</button>
+      <button class="bg-white/10 py-2 px-4 rounded">Psychology</button>
+
+    </div>
+      </div>
+      
+    </section>
+
+    <section class="footer-card min-h-screen py-10 px-4">
+      <h1 class="text-2xl font-bold text-white ml-4 py-4 px-4">Book-Explorer</h1>
+        
+    <div id="booksContainer"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+    ></div>
+
+    </section>
+
+    <footer class="absolute bottom-0 left-0 right-0">
+    <div class="Card text-gray-300 shadow mt-10 py-4 px-6 flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <p>© 2026 BookExplorer. Built with Tailwind + JavaScript.</p>
+      </div>
+      <div>
+       <a
+              href="index.html"
+              class=" rounded py-2 px-4"
+              >Home</a
+            >
+            <a
+              href="favorites.html"
+              class=" rounded py-2 px-4"
+              >Favorites</a
+            >
+            <a
+              href="about.html"
+              class=" rounded py-2 px-4"
+              >About</a
+            > 
+      </div>
+    </div>
+    </footer>
+  </body>
 </html>
+
+   
