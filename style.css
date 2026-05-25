@@ -1,0 +1,26 @@
+#Prime{
+    font-family: 'Arial', sans-serif;
+  background: linear-gradient(
+  to right,
+  #2b0d07,
+  #4a1f12,
+  #6b341c
+);
+}
+
+.Card{
+    background: linear-gradient(
+  to right,
+  #2b0d07,
+  #4a1f12,
+  #6b341c
+);
+}
+.hero-card{
+   font-family: c;
+}
+
+.footer-card{ 
+      background: linear-gradient(to bottom right,rgb(105, 100, 100),rgba(249, 213, 213, 0.932));
+
+    }
