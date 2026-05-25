@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body  class="footer-card text-white h-[50%]">
+  <body  class="footer-card text-white h-[50%] relative">
     <header>
       <nav class="Card shadow fixed top-0 left-0 right-0">
         <div
@@ -22,17 +22,17 @@
 
           <div class="hidden md:flex items-center gap-6 font-bold text-lg">
             <a
-              href="#home"
+              href="index.html"
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
               >Home</a
             >
             <a
-              href="#favorites"
+              href="favorites.html"
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
               >Favorites</a
             >
             <a
-              href="#about"
+              href="about.html"
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
               >About</a
             >
@@ -50,7 +50,7 @@
     </header>
 
     
-    <section  id="Prime" class="flex justify-center items-center py-40">
+    <section  id="Prime" class="flex justify-center items-center py-40 ">
       <div>
         <div class="hero-card ml-4 mr-4 md:ml-0 md:mr-0">
           <p
@@ -95,7 +95,41 @@
       </div>
       
     </section>
-   
-</head>
- </body>
+
+    <section class="footer-card min-h-screen py-10 px-4">
+      <h1 class="text-2xl font-bold text-white ml-4 py-4 px-4">Book-Explorer</h1>
+        
+    <div id="booksContainer"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+    ></div>
+
+    </section>
+
+    <footer class="absolute bottom-0 left-0 right-0">
+    <div class="Card text-gray-300 shadow mt-10 py-4 px-6 flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <p>© 2026 BookExplorer. Built with Tailwind + JavaScript.</p>
+      </div>
+      <div>
+       <a
+              href="index.html"
+              class=" rounded py-2 px-4"
+              >Home</a
+            >
+            <a
+              href="favorites.html"
+              class=" rounded py-2 px-4"
+              >Favorites</a
+            >
+            <a
+              href="about.html"
+              class=" rounded py-2 px-4"
+              >About</a
+            > 
+      </div>
+    </div>
+    </footer>
+  </body>
 </html>
+
+   
