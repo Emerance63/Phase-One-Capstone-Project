@@ -51,18 +51,16 @@
       </nav>
     </header>
 
-    <section class=" hero-card max-h-screen mx-auto px-6 py-40">
+    <section class=" hero-card w-full mx-auto px-6 py-40">
         <p class="tracking-widest text-amber-800 mb-4 text-2xl">Your Collection</p>
         <h1 class="text-5xl font-bold mb-4">Favorite Books</h1>
+
+        <div id="favorites-container" class="mt-20"></div>
 
         <div id="emptyState" class="text-center mt-20">
             <div class="text-6xl mb-4"><i class="far fa-heart"></i>
 </div>
 
-            <h2 class="text-3xl font-bold mb-2">No favorite books yet.</h2>
-
-            <p class="text-white/40">Start adding books to your favorites to see them here.</p>
-        </div>
     </section>
 
      <footer class="absolute w-full bottom-0">
@@ -89,6 +87,8 @@
       </div>
     </div>
     </footer>
-    <script src="/Asset/humbergur-menu.js"></script>
+ <script src="asset/humbergur.js"></script>
+ <script type="module" src="asset/main.js"></script>
+    <div id="toast"></div>
 </body>
 </html>
