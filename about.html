@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="footer-card text-white min-h-screen">
+<body class="footer-card text-white h-full relative">
     
      <header>
       <nav class="Card shadow fixed top-0 left-0 right-0">
@@ -95,30 +95,41 @@
             </div>
 
 
-            <div  class="bg-gray-300 border py-4 px-2 w-60 rounded text-black flex flex-col gap-2 w-[80%]">
+            <div  class="bg-gray-300 border py-4 px-2 rounded text-black flex flex-col gap-2 w-[80%]">
                 <div class="flex gap-6">
                     <h1 class="text-orange-400 text-2xl text-bold">04</h1>
                     <h2 class="text-lg  text-black">GitHub Collaboration</h2>
                 </div>
                 <div>
-                    <p>Built for collaborative workflow :feature branches for search and favorites functionality.</p>
+                    <p class="text-gray-700 ml-4">Built for collaborative workflow :feature branches for search and favorites functionality.</p>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <div>
-        <h1>Tech Stack</h1>
-        <ul>
-            <li>Frontend: HTML, CSS, JavaScript</li>
-            <li>Date:Open Library Rest API</li>
-            <li>Open Library API</li>
-            <li>icons:Font Awesome 6</li>
-            <li>Styling: Tailwind CSS</li>
-            <li>persistence: LocalStorage</li>
-            <li>font: Google Fonts</li>
-        </ul>
+    <div class="bg-black rounded m-20 px-8 py-10">
+        <h1 class=" text-2xl font-bold">Tech Stack</h1>
+        <div class="flex flex-col md:flex-row gap-40 m-10">
+
+            <div>
+                <ul>
+                    <li><span class="font-bold text-orange-400">Frontend:</span> HTML, CSS, JavaScript</li>
+                    <li><span class="font-bold text-orange-400">Date:</span> Open Library Rest API</li>
+                    <li><span class="font-bold text-orange-400">icons:</span> Font Awesome 6</li>
+                </ul>
+            </div>
+    
+            <div>
+    
+                <ul>
+                    <li><span class="font-bold text-orange-400">Styling:</span> Tailwind CSS</li>
+                    <li><span class="font-bold text-orange-400">persistence:</span> LocalStorage</li>
+                    <li><span class="font-bold text-orange-400">font:</span> Google Fonts</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </section>
 </body>
