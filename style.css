@@ -24,3 +24,11 @@
       background: linear-gradient(to bottom right,rgb(105, 100, 100),rgba(249, 213, 213, 0.932));
 
     }
+    nav.Card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
