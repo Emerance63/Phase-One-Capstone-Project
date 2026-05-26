@@ -29,7 +29,10 @@
             <a
               href="favorites.html"
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
-              >Favorites</a
+              >Favorites <span 
+              id="fav-count"
+              class=" text-white text-xs font-bold align-middle"
+              >0</span></a
             >
             <a
               href="about.html"
@@ -85,11 +88,11 @@
         </div>
          <div class="flex flex-wrap justify-center gap-4 mt-8 ">
 
-      <button class="bg-white/10 py-2 px-4 rounded">Philosophy</button>
-      <button class="bg-white/10 py-2 px-4 rounded">Science Fiction</button>
-      <button class="bg-white/10 py-2 px-4 rounded">Classic Literature</button>
-      <button class="bg-white/10 py-2 px-4 rounded">History</button>
-      <button class="bg-white/10 py-2 px-4 rounded">Psychology</button>
+      <button class="category-btn bg-white/10 py-2 px-4 rounded">Philosophy</button>
+      <button class="category-btn bg-white/10 py-2 px-4 rounded">Science Fiction</button>
+      <button class="category-btn bg-white/10 py-2 px-4 rounded">Classic Literature</button>
+      <button class="category-btn bg-white/10 py-2 px-4 rounded">History</button>
+      <button class="category-btn bg-white/10 py-2 px-4 rounded">Psychology</button>
 
     </div>
       </div>
@@ -98,6 +101,8 @@
 
     <section class="footer-card min-h-screen py-10 px-4">
       <h1 class="text-2xl font-bold text-white ml-4 py-4 px-4">Book-Explorer</h1>
+
+      <div id="message" class="text-center text-orange-300 py-4"></div>
         
     <div id="booksContainer"
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
@@ -131,6 +136,8 @@
     </footer>
 
     <script src="/Asset/humbergur-menu.js"></script>
+    <script type="module" src="./asset/main.js"></script>
+    <div id="toast"></div>
   </body>
 </html>
 
