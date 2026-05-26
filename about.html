@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="footer-card text-white h-full relative">
+<body class="footer-card text-white min-h-screen relative">
     
      <header>
-      <nav class="Card shadow fixed top-0 left-0 right-0">
+    <nav class="Card shadow fixed top-0 left-0 right-0">
         <div
           class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6"
         >
@@ -39,11 +39,13 @@
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
               >About</a
             >
-          </div>
-        </nav>
+
+            
+      
+    </nav>
         </header>
 
-<section class=" hero-card max-h-screen mx-auto px-6 py-40">
+<section class=" hero-card px-6 py-40 ml-10 md:ml-20">
     <div>
         <h1 class="font-bold text-3xl text-black">About Book-Explorer</h1>
         <h2 class="font-bold text-3xl text-orange-400">Web App</h2>
@@ -62,7 +64,7 @@
         </div>
 
     <div class="mt-10 gap-6 flex flex-col ">
-            <div class="bg-gray-300 border py-4 px-2 w-60 rounded text-black flex flex-col gap-2 w-[80%]">
+            <div class="bg-gray-300 border py-4 px-2 w-60 rounded text-black flex flex-col  gap-2 w-[70%]">
                 <div class="flex gap-6">
                     <h1 class="text-orange-400 text-2xl text-bold ml-4">01</h1>
                     <h2 class="text-lg  text-black ">Responsive Multi-Page Layouts </h2>
@@ -72,7 +74,7 @@
                 </div>
             </div>
 
-            <div  class="bg-gray-300 border py-4 px-2 w-60 rounded text-black flex flex-col gap-2 w-[80%]">
+            <div  class="bg-gray-300 border py-4 px-2 rounded text-black flex flex-col gap-2 w-[70%]">
                 <div class="flex gap-6">
                     <h1 class="text-orange-400 text-2xl text-bold ml-4">02</h1>
                     <h2 class="text-lg  text-black">DOM Interactivity & JavaScript Modules</h2>
@@ -83,7 +85,7 @@
             </div>
 
             
-            <div  class="bg-gray-300 border py-4 px-2 w-60 rounded text-black flex flex-col gap-2 w-[80%]">
+            <div  class="bg-gray-300 border py-4 px-2 w-60 rounded text-black flex flex-col gap-2 w-[70%]">
                 <div class="flex gap-6">
                     <h1 class="text-orange-400 text-2xl text-bold">03</h1>
                     <h2 class="text-lg  text-black">Async JavaScript & API Integration</h2>
@@ -95,7 +97,7 @@
             </div>
 
 
-            <div  class="bg-gray-300 border py-4 px-2 rounded text-black flex flex-col gap-2 w-[80%]">
+            <div  class="bg-gray-300 border py-4 px-2 rounded text-black flex flex-col gap-2 w-[70%]">
                 <div class="flex gap-6">
                     <h1 class="text-orange-400 text-2xl text-bold">04</h1>
                     <h2 class="text-lg  text-black">GitHub Collaboration</h2>
@@ -108,29 +110,53 @@
 
     </div>
 
-    <div class="bg-black rounded m-20 px-8 py-10">
-        <h1 class=" text-2xl font-bold">Tech Stack</h1>
-        <div class="flex flex-col md:flex-row gap-40 m-10">
+   <div class="bg-black rounded mt-10 px-6 py-4 w-full md:w-[50%] md: md:px-10 md:py-8">
+    <h1 class="text-2xl font-bold">Tech Stack</h1>
+    <div class="flex flex-col md:flex-row gap-6 md:gap-40 m-4 md:m-10">
 
-            <div>
-                <ul>
-                    <li><span class="font-bold text-orange-400">Frontend:</span> HTML, CSS, JavaScript</li>
-                    <li><span class="font-bold text-orange-400">Date:</span> Open Library Rest API</li>
-                    <li><span class="font-bold text-orange-400">icons:</span> Font Awesome 6</li>
-                </ul>
-            </div>
-    
-            <div>
-    
-                <ul>
-                    <li><span class="font-bold text-orange-400">Styling:</span> Tailwind CSS</li>
-                    <li><span class="font-bold text-orange-400">persistence:</span> LocalStorage</li>
-                    <li><span class="font-bold text-orange-400">font:</span> Google Fonts</li>
-                </ul>
-            </div>
+        <div>
+            <ul>
+                <li><span class="font-bold text-orange-400">Frontend:</span> HTML, CSS, JavaScript</li>
+                <li><span class="font-bold text-orange-400">Date:</span> Open Library Rest API</li>
+                <li><span class="font-bold text-orange-400">icons:</span> Font Awesome 6</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><span class="font-bold text-orange-400">Styling:</span> Tailwind CSS</li>
+                <li><span class="font-bold text-orange-400">persistence:</span> LocalStorage</li>
+                <li><span class="font-bold text-orange-400">font:</span> Google Fonts</li>
+            </ul>
         </div>
 
     </div>
+</div>
 </section>
+
+ <footer class="absolute w-full bottom-0">
+    <div class="Card text-gray-300 shadow mt-10 py-4 px-6 flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <p>© 2026 BookExplorer. Built with Tailwind + JavaScript.</p>
+      </div>
+      <div>
+       <a
+              href="/index.html"
+              class=" rounded py-2 px-4"
+              >Home</a
+            >
+            <a
+              href="/favorites.html"
+              class=" rounded py-2 px-4"
+              >Favorites</a
+            >
+            <a
+              href="/about.html"
+              class=" rounded py-2 px-4"
+              >About</a
+            > 
+      </div>
+    </div>
+    </footer>
 </body>
 </html>
