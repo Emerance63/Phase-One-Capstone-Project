@@ -1,0 +1,8 @@
+{
+  "outputDirectory": "Html",
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/favorites", "destination": "/favorites.html" },
+    { "source": "/about", "destination": "/about.html" }
+  ]
+}
