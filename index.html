@@ -7,21 +7,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body  class="footer-card text-white h-[50%] relative">
+  <body class="footer-card text-white h-[50%] relative">
     <header>
       <nav class="Card shadow fixed top-0 left-0 right-0">
         <div
           class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6"
         >
-         <div class="flex items-center gap-3">
+          <div class="flex items-center gap-3">
             <div class="w-10 md:w-20">
               <img src="/image/Igire_Rwanda_Logo (1).png" alt="Logo" />
             </div>
             <h1 class="text-xl font-bold">Book-Explorer</h1>
           </div>
 
-          <div class="nav-links hidden flex-col absolute top-20 right-0 w-full text-center p-6 gap-4 font-bold text-lg md:flex md:flex-row md:static md:w-auto md:p-0">
-            <a 
+          <div
+            class="nav-links hidden flex-col absolute top-20 right-0 w-full text-center p-6 gap-4 font-bold text-lg bg-orange-900/90 md:bg-transparent md:flex md:flex-row md:static md:w-auto md:p-0"
+          >
+            <a
               href="index.html"
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
               >Home</a
@@ -29,10 +31,12 @@
             <a
               href="favorites.html"
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
-              >Favorites <span 
-              id="fav-count"
-              class=" text-white text-xs font-bold align-middle"
-              >0</span></a
+              >Favorites
+              <span
+                id="fav-count"
+                class="text-white text-xs font-bold align-middle"
+                >0</span
+              ></a
             >
             <a
               href="about.html"
@@ -42,7 +46,7 @@
           </div>
 
           <div
-            class="hamburger-menu flex md:hidden flex-col justify-between cursor-pointer h-6 w-8"
+            class="hamburger-menu flex md:hidden flex-col justify-between cursor-pointer h-6 w-8 p-1"
           >
             <div class="block h-1 bg-white rounded"></div>
             <div class="block h-1 bg-white rounded"></div>
@@ -52,8 +56,7 @@
       </nav>
     </header>
 
-    
-    <section  id="Prime" class="flex justify-center items-center py-40 ">
+    <section id="Prime" class="flex justify-center items-center py-40">
       <div>
         <div class="hero-card ml-4 mr-4 md:ml-0 md:mr-0">
           <p
@@ -62,18 +65,21 @@
             POWER BY OPEN LIBRARY
           </p>
           <h2 class="text-4xl font-bold mb-4 md:text-8xl">
-            Discover your next </h2>
-            <p class="text-orange-500 text-3xl font-bold text-center md:text-6xl "
-              >favorite Book</p>
-            
-          
+            Discover your next
+          </h2>
+          <p class="text-orange-500 text-3xl font-bold text-center md:text-6xl">
+            favorite Book
+          </p>
+
           <p class="text-lg text-gray-300 text-center">
-             Search millions of books, save your favorites,
-      and build your reading list.
+            Search millions of books, save your favorites, and build your
+            reading list.
           </p>
         </div>
 
-        <div class="mt-8 flex flex-row gap-1 ml-4  md:gap-2 ml-0 items-center justify-center">
+        <div
+          class="mt-8 flex flex-row gap-1 ml-4 md:gap-2 ml-0 items-center justify-center"
+        >
           <input
             type="text"
             id="search-input"
@@ -88,59 +94,59 @@
             Search
           </button>
         </div>
-         <div class="flex flex-wrap justify-center gap-4 mt-8 ">
-
-      <button class="category-btn bg-white/10 py-2 px-4 rounded">Philosophy</button>
-      <button class="category-btn bg-white/10 py-2 px-4 rounded">Science Fiction</button>
-      <button class="category-btn bg-white/10 py-2 px-4 rounded">Classic Literature</button>
-      <button class="category-btn bg-white/10 py-2 px-4 rounded">History</button>
-      <button class="category-btn bg-white/10 py-2 px-4 rounded">Psychology</button>
-
-    </div>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <button class="category-btn bg-white/10 py-2 px-4 rounded">
+            Philosophy
+          </button>
+          <button class="category-btn bg-white/10 py-2 px-4 rounded">
+            Science Fiction
+          </button>
+          <button class="category-btn bg-white/10 py-2 px-4 rounded">
+            Classic Literature
+          </button>
+          <button class="category-btn bg-white/10 py-2 px-4 rounded">
+            History
+          </button>
+          <button class="category-btn bg-white/10 py-2 px-4 rounded">
+            Psychology
+          </button>
+        </div>
       </div>
-      
     </section>
 
     <section class="footer-card min-h-screen py-10 px-4">
-      <h1 class="text-2xl font-bold text-white ml-4 py-4 px-4">Book-Explorer</h1>
+      <h1 class="text-2xl font-bold text-white ml-4 py-4 px-4">
+        Book-Explorer
+      </h1>
 
       <div id="message" class="text-center text-orange-300 py-4"></div>
-        
-    <div id="book-container"
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
-    ></div>
 
+      <div
+        id="book-container"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+      ></div>
     </section>
 
     <footer class="absolute bottom-0 left-0 right-0">
-    <div class="Card text-gray-300 shadow mt-10 py-4 px-6 flex flex-col md:flex-row justify-between items-center">
-      <div>
-        <p>© 2026 BookExplorer. Built with Tailwind + JavaScript.</p>
+      <div
+        class="Card text-gray-300 shadow mt-10 py-4 px-6 flex flex-col md:flex-row justify-between items-center"
+      >
+        <div>
+          <p>© 2026 BookExplorer. Built with Tailwind + JavaScript.</p>
+        </div>
+        <div>
+          <a href="index.html" class="rounded py-2 px-4">Home</a>
+          <a href="favorites.html" class="rounded py-2 px-4">Favorites</a>
+          <a href="about.html" class="rounded py-2 px-4">About</a>
+        </div>
       </div>
-      <div>
-       <a
-              href="index.html"
-              class=" rounded py-2 px-4"
-              >Home</a
-            >
-            <a
-              href="favorites.html"
-              class=" rounded py-2 px-4"
-              >Favorites</a
-            >
-            <a
-              href="about.html"
-              class=" rounded py-2 px-4"
-              >About</a
-            > 
-      </div>
-    </div>
     </footer>
 
     <script src="/Asset/humbergur-menu.js"></script>
     <script type="module" src="/Asset/main.js"></script>
-    <div id="toast" class="fixed bottom-4 right-4 bg-orange-500 text-white px-4 py-2 rounded hidden"></div>
+    <div
+      id="toast"
+      class="fixed bottom-4 right-4 bg-orange-500 text-white px-4 py-2 rounded hidden"
+    ></div>
   </body>
 </html>
-
-   
