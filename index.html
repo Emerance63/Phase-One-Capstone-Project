@@ -76,11 +76,13 @@
         <div class="mt-8 flex flex-row gap-1 ml-4  md:gap-2 ml-0 items-center justify-center">
           <input
             type="text"
+            id="search-input"
             placeholder="Search for books..."
             class="bg-orange-200 px-4 py-2 rounded font-semibold placeholder:text-white"
           />
 
           <button
+            id="search-btn"
             class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded"
           >
             Search
@@ -104,7 +106,7 @@
 
       <div id="message" class="text-center text-orange-300 py-4"></div>
         
-    <div id="booksContainer"
+    <div id="book-container"
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
     ></div>
 
@@ -136,8 +138,8 @@
     </footer>
 
     <script src="/Asset/humbergur-menu.js"></script>
-    <script type="module" src="./asset/main.js"></script>
-    <div id="toast"></div>
+    <script type="module" src="/Asset/main.js"></script>
+    <div id="toast" class="fixed bottom-4 right-4 bg-orange-500 text-white px-4 py-2 rounded hidden"></div>
   </body>
 </html>
 
