@@ -1,4 +1,4 @@
-const BASE_URL = "https://openlibrary.org/search.json";
+﻿const BASE_URL = "https://openlibrary.org/search.json";
 
 const FALLBACK_BOOKS = [
   {
@@ -53,3 +53,4 @@ export async function fetchBooks(searchTerm = "javascript") {
     return fallbackSearch(normalizedSearch);
   }
 }
+
