@@ -4,10 +4,12 @@ function showToast(message) {
   const toast = document.getElementById("toast");
   if (!toast) return;
   toast.textContent = message;
+  toast.classList.remove("hidden");
   toast.classList.add("show");
   clearTimeout(window._toastTimeout);
   window._toastTimeout = setTimeout(() => {
     toast.classList.remove("show");
+    toast.classList.add("hidden");
   }, 2000);
 }
 
@@ -51,10 +53,10 @@ export function createBookCard(book, favoritePage = false) {
       showToast("Removed from favorites");
       if (favoritePage) {
         card.remove();
-        // if favorites list is now empty, show empty message
+        const emptyState = document.getElementById("emptyState");
         const favContainer = document.getElementById("favorites-container");
-        if (favContainer && favContainer.children.length === 0) {
-          favContainer.innerHTML = "<h2>No favorite books yet</h2>";
+        if (emptyState && favContainer && favContainer.children.length === 0) {
+          emptyState.style.display = "block";
         }
       }
     } else {
