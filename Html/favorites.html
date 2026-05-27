@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorite Books</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="footer-card text-white min-h-screen flex flex-col">
@@ -17,19 +16,18 @@
         >
           <div class="flex items-center gap-3">
             <div class="w-10 md:w-20">
-              <img src="/image/Igire_Rwanda_Logo (1).png" alt="Logo" />
+              <img src="./image/Igire_Rwanda_Logo (1).png" alt="Logo" />
             </div>
             <h1 class="text-xl font-bold">Book-Explorer</h1>
           </div>
-
           <div class="nav-links hidden flex-col absolute top-20 right-0 w-full text-center p-6 gap-4 font-bold text-lg bg-orange-900/90 md:bg-transparent md:flex md:flex-row md:static md:w-auto md:p-0">
             <a
-              href="/Html/index.html"
+              href="./index.html"
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
               >Home</a
             >
             <a
-              href="/Html/favorites.html"
+              href="./favorites.html"
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
               >Favorites <span
                 id="fav-count"
@@ -38,12 +36,11 @@
               ></a
             >
             <a
-              href="/Html/about.html"
+              href="./about.html"
               class="inline-block hover:bg-orange-600 rounded py-2 px-4"
               >About</a
             >
           </div>
-
           <div
             class="hamburger-menu flex md:hidden flex-col justify-between cursor-pointer h-6 w-8 p-1"
           >
@@ -54,45 +51,29 @@
         </div>
       </nav>
     </header>
-
-    <section class=" hero-card w-full mx-auto px-6 py-40">
+    <section class="hero-card w-full mx-auto px-6 py-40">
         <p class="tracking-widest text-amber-800 mb-4 text-2xl">Your Collection</p>
         <h1 class="text-5xl font-bold mb-4">Favorite Books</h1>
-
         <div id="favorites-container" class="mt-20"></div>
-
-        <div id="emptyState" class="text-center py-20 mt-20 border-2 border-solid border-gray-500  rounded-lg w-[70%] shadow-lg min-h-[250px] mx-auto"> <p class="text-white text-lg font-bold">No favorates yet. Start adding some!</p>
-            <div class="text-6xl mb-4"><i class="far fa-heart"></i>
-</div>
-
+        <div id="emptyState" class="text-center py-20 mt-20 border-2 border-solid border-gray-500 rounded-lg w-[70%] shadow-lg min-h-[250px] mx-auto">
+          <p class="text-white text-lg font-bold">No favorates yet. Start adding some!</p>
+          <div class="text-6xl mb-4"><i class="far fa-heart"></i></div>
+        </div>
     </section>
-
-     <footer class="mt-auto w-full">
+    <footer class="mt-auto w-full">
     <div class="Card text-gray-300 shadow mt-10 py-4 px-6 flex flex-col md:flex-row justify-between items-center">
       <div>
         <p>© 2026 BookExplorer. Built with Tailwind + JavaScript.</p>
       </div>
       <div>
-       <a
-              href="/Html/index.html"
-              class=" rounded py-2 px-4"
-              >Home</a
-            >
-            <a
-              href="/Html/favorites.html"
-              class=" rounded py-2 px-4"
-              >Favorites</a
-            >
-            <a
-              href="/Html/about.html"
-              class=" rounded py-2 px-4"
-              >About</a
-            > 
+        <a href="./index.html" class="rounded py-2 px-4">Home</a>
+        <a href="./favorites.html" class="rounded py-2 px-4">Favorites</a>
+        <a href="./about.html" class="rounded py-2 px-4">About</a>
       </div>
     </div>
     </footer>
-    <script src="/Asset/humbergur-menu.js"></script>
-    <script type="module" src="/Asset/main.js"></script>
+    <script src="./Asset/humbergur-menu.js"></script>
+    <script type="module" src="./Asset/main.js"></script>
     <div id="toast" class="fixed bottom-4 right-4 bg-orange-500 text-white px-4 py-2 rounded hidden"></div>
   </body>
 </html>
