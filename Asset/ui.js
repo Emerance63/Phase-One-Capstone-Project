@@ -51,10 +51,10 @@ export function createBookCard(book, favoritePage = false) {
       showToast("Removed from favorites");
       if (favoritePage) {
         card.remove();
-        // if favorites list is now empty, show empty message
+        const emptyState = document.getElementById("emptyState");
         const favContainer = document.getElementById("favorites-container");
-        if (favContainer && favContainer.children.length === 0) {
-          favContainer.innerHTML = "<h2>No favorite books yet</h2>";
+        if (emptyState && favContainer && favContainer.children.length === 0) {
+          emptyState.style.display = "block";
         }
       }
     } else {

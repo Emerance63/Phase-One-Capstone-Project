@@ -133,14 +133,18 @@ async function loadBooks(search = "programming") {
 function loadFavorites() {
   if (!favoritesContainer) return;
 
+  const emptyState = document.getElementById("emptyState");
   const favorites = getFavorites();
 
   favoritesContainer.innerHTML = "";
+  if (emptyState) {
+    emptyState.style.display = favorites.length === 0 ? "block" : "none";
+  }
 
   if (favorites.length === 0) {
-    favoritesContainer.innerHTML = "<p>No favorite books yet.</p>";
     return;
   }
+
   favorites.forEach((book) => {
     const card = createBookCard(book, true);
     favoritesContainer.appendChild(card);
