@@ -1,4 +1,4 @@
-import { fetchBooks } from "./fetchbooks.js";
+import { fetchBooks } from "./fetchBooks.js";
 import { createBookCard } from "./ui.js";
 import { getFavorites } from "./favorates.js";
 const booksContainer = document.getElementById("book-container");
